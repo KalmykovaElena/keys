@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="keys">
-        <div class="key">
-        <button >A</button>
-        </div>
-        <div class="key">
-            <button>S</button>
-        </div>
-        <div class="key">
-            <button>D</button>
-        </div>
-        <div class="key">
-            <button>F</button>
-        </div>
-        <div class="key">
-            <button>G</button>
-        </div>
-        <div class="key">
-            <button>H</button>
-        </div>
-        <div class="key">
-            <button>J</button>
-        </div>
-        <div class="key">
-            <button>K</button>
-        </div>
-        <div class="key">
-            <button>L</button>
-        </div>
+      <div class="key" data-key="65"><button >A</button></div>
+      <div class="key" data-key="83"><button>S</button></div>
+      <div class="key" data-key="68"><button>D</button></div>
+      <div class="key" data-key="70"><button>F</button></div>
+      <div class="key" data-key="71"><button>G</button></div>
+      <div class="key" data-key="72"><button>H</button></div>
+      <div class="key" data-key="74"><button>J</button></div>
+      <div class="key" data-key="75"><button>K</button></div>
+      <div class="key" data-key="76"><button>L</button></div>
     </div>
+    <audio src="./songs/A.mp3" controls data-key="65"></audio>
+    <audio src="./songs/S.mp3" controls data-key="83"></audio>
+    <audio src="./songs/D.mp3" controls data-key="68"></audio>
+    <audio src="./songs/C.mp3" controls data-key="72"></audio>
+    <audio src="./songs/E.mp3" controls data-key="74"></audio>
+    <audio src="./songs/Q.mp3" controls data-key="70"></audio>
+    <audio src="./songs/W.mp3" controls data-key="71"></audio>
+    <audio src="./songs/X.mp3" controls data-key="75"></audio>
+    <audio src="./songs/X.mp3" controls data-key="76"></audio>
     <script src="./script.js"></script>
-</body>
-</html> 
+  </body>
+</html>

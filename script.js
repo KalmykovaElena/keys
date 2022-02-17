@@ -1,26 +1,12 @@
-// function func(arr){
-//     let sum=arr[0];
-//     for(i=1;i<arr.length;i++){
-//         if(sum>arr[i]){
-//             return false
-//         }else{
-//             sum+=arr[i]
-//         }
-//     }
-//     return true
-// }
+const playSound = (event) => {
+  console.log(event);
+  const button = document.querySelector(`div[data-key='${event.keyCode}']`);
+  const audio = document.querySelector(`audio[data-key='${event.keyCode}]`);
+  if (!audio) return; //чтобы не было ошибки если аудио еще не загрузилось, а кнопка уже нажата
+  button.classList.add("play"); // добавляем класс к диву в html
+  audio.currentTime = 0; // обнуляем время проигрывания, чтобы при повторном нажатии музыка воспроизвелась опять
+  audio.play();
+  console.log("OK");
+};
 
-
-
-
-let func=numbersArr=>{
-     let check= numbersArr.every((el, index,arr) =>{
-     return  el>numbersArr.slice(0,numbersArr.indexOf(el)).reduce((acc,el)=>acc+=el,0);
-         
-      })
-      return check
-    }
-    console.log(func([2,3,7,24,4]));
-    
-    
-    
+window.addEventListener("keydown", playSound); // в функцию ничего не передаем

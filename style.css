@@ -3,7 +3,9 @@ html{
     background-size: cover;
     font-size: 10px;
 }
-
+.transform{
+    transform: scale(1.5);
+}
 .keys{
     display:flex;
     justify-content: space-between;
@@ -46,7 +48,17 @@ border:.5rem solid rgb(163, 210, 241);
 border-color: transparent;
 box-shadow: 0px 0px 0px 2px rgb(163, 163, 241),inset 0px 0px 0px 2px rgb(104, 104, 196), 0px 0px 20px 4px rgb(76, 209, 250),inset 0px 0px 20px 4px rgb(111, 111, 161);
 }
-/* button:hover{
-    background: rgba(5, 44, 102, 0.4);
-    color:rgb(30, 198, 210)
-} */
+@media screen and (max-width: 900px) { 
+    .keys{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .key:nth-child(-n+4){
+        width: 15rem
+    }
+    .key{
+        width:10rem; 
+    }
+
+}
