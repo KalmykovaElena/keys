@@ -1,0 +1,50 @@
+html{
+    background:url('./img/earth-g06079dfa0_1920.jpg');
+    background-size: cover;
+    font-size: 10px;
+}
+
+.keys{
+    display:flex;
+    justify-content: space-between;
+    min-height: 100vh; 
+    align-items: center;
+}
+.key{
+    border: .4rem solid rgb(70, 61, 51); 
+    
+    border-radius: .5rem; 
+    margin: 1rem; 
+    font-size: 1.5rem; 
+    padding: 1rem .5rem; 
+    transition: all .07s ease; 
+    width: 10rem; 
+    text-align: center; 
+    color: white; 
+    background: rgba(0,0,0,0.4); 
+    text-shadow: 0 0 .5rem black; 
+}
+button{
+    font-size: 4.5rem;
+    width: 90%; 
+    background: rgba(0,0,0,0.4); 
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+.key:hover{
+border:.5rem solid rgb(163, 210, 241);
+border-color: transparent;
+box-shadow: 0px 0px 0px 2px rgb(163, 163, 241),inset 0px 0px 0px 2px rgb(104, 104, 196), 0px 0px 20px 4px rgb(76, 209, 250),inset 0px 0px 20px 4px rgb(111, 111, 161);
+}
+/* button:hover{
+    background: rgba(5, 44, 102, 0.4);
+    color:rgb(30, 198, 210)
+} */
