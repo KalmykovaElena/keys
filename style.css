@@ -7,10 +7,12 @@ html{
     transform: scale(1.5);
 }
 .keys{
+    margin:25% 0;
+    min-height: 50vh; ;
     display:flex;
     justify-content: space-between;
-    min-height: 100vh; 
     align-items: center;
+    flex-wrap: wrap;
 }
 .key{
     border: .4rem solid rgb(70, 61, 51); 
@@ -20,8 +22,8 @@ html{
     font-size: 5rem; 
     padding: 1rem .5rem; 
     transition: all .07s ease; 
-    width: 20rem;
-    min-height: 10rem; 
+    min-width: 10rem;
+    /* min-height: 10rem;  */
     text-align: center; 
     color: white; 
     background: rgba(0,0,0,0.4); 
@@ -48,17 +50,51 @@ border:.5rem solid rgb(163, 210, 241);
 border-color: transparent;
 box-shadow: 0px 0px 0px 2px rgb(163, 163, 241),inset 0px 0px 0px 2px rgb(104, 104, 196), 0px 0px 20px 4px rgb(76, 209, 250),inset 0px 0px 20px 4px rgb(111, 111, 161);
 }
-@media screen and (max-width: 900px) { 
+@media screen and (max-width: 1280px) { 
     .keys{
+        
         display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
-    .key:nth-child(-n+4){
-        width: 15rem
+    .key:nth-child(-n+5){
+       width: 20rem;
     }
     .key{
-        width:10rem; 
+        max-height: 10rem;
     }
 
 }
+@media screen and (max-width: 1216px) { 
+    .key:nth-child(-n+5){
+        width: 15rem;
+     }
+     .key{
+        width: 15rem;
+     }
+}
+@media screen and (max-width: 960px) { 
+   html{
+       font-size: 8px;
+   }
+}
+@media screen and (max-width: 775px) { 
+    .key{
+        width: 20rem;
+     }
+     .key:nth-child(-n+5){
+        width: 20rem;
+     }
+ }
+ @media screen and (max-width: 600px) { 
+    .key{
+        width: 15rem;
+     }
+     .key:nth-child(-n+5){
+        width: 15rem;
+     }
+ }
+ @media screen and (max-width: 470px) { 
+    html{
+        font-size: 6px;
+    }
+ }
