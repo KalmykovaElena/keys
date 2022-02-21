@@ -1,100 +1,97 @@
-html{
-    background:url('./img/earth-g06079dfa0_1920.jpg');
-    background-size: cover;
-    font-size: 10px;
+html {
+  background: url("./img/earth-g06079dfa0_1920.jpg");
+  background-size: cover;
+  font-size: 10px;
 }
-.transform{
-    transform: scale(1.5);
+.transform {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+  transition-property: all, -moz-specific, sliding;
 }
-.keys{
-    margin:25% 0;
-    min-height: 50vh; ;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.key{
-    border: .4rem solid rgb(70, 61, 51); 
-    
-    border-radius: .5rem; 
-    margin: 1rem; 
-    font-size: 5rem; 
-    padding: 1rem .5rem; 
-    transition: all .07s ease; 
-    min-width: 10rem;
-    /* min-height: 10rem;  */
-    text-align: center; 
-    color: white; 
-    background: rgba(0,0,0,0.4); 
-    text-shadow: 0 0 .5rem black; 
-}
-button{
-    font-size: 4.5rem;
-    width: 90%; 
-    height: 10rem;
-    background: rgba(0,0,0,0.4); 
-    color: #fff;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
-}
-.key:hover{
-border:.5rem solid rgb(163, 210, 241);
-border-color: transparent;
-box-shadow: 0px 0px 0px 2px rgb(163, 163, 241),inset 0px 0px 0px 2px rgb(104, 104, 196), 0px 0px 20px 4px rgb(76, 209, 250),inset 0px 0px 20px 4px rgb(111, 111, 161);
-}
-@media screen and (max-width: 1280px) { 
-    .keys{
-        
-        display:flex;
-        justify-content: center;
-    }
-    .key:nth-child(-n+5){
-       width: 20rem;
-    }
-    .key{
-        max-height: 10rem;
-    }
 
+.keys {
+  margin: 25% 0;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 1216px) { 
-    .key:nth-child(-n+5){
-        width: 15rem;
-     }
-     .key{
-        width: 15rem;
-     }
+.key {
+  border: 0.4rem solid rgb(70, 61, 51);
+
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  min-width: 10rem;
+  /* min-height: 10rem;  */
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+  transition: margin-right 2s;
 }
-@media screen and (max-width: 960px) { 
-   html{
-       font-size: 8px;
-   }
+button {
+  font-size: 4.5rem;
+  width: 90%;
+  height: 10rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
-@media screen and (max-width: 775px) { 
-    .key{
-        width: 20rem;
-     }
-     .key:nth-child(-n+5){
-        width: 20rem;
-     }
- }
- @media screen and (max-width: 600px) { 
-    .key{
-        width: 15rem;
-     }
-     .key:nth-child(-n+5){
-        width: 15rem;
-     }
- }
- @media screen and (max-width: 470px) { 
-    html{
-        font-size: 6px;
-    }
- }
+.key:hover {
+  border: 0.5rem solid rgb(163, 210, 241);
+  border-color: transparent;
+  box-shadow: 0px 0px 0px 2px rgb(163, 163, 241),
+    inset 0px 0px 0px 2px rgb(104, 104, 196), 0px 0px 20px 4px rgb(76, 209, 250),
+    inset 0px 0px 20px 4px rgb(111, 111, 161);
+}
+@media screen and (max-width: 1280px) {
+  .keys {
+    display: flex;
+    justify-content: center;
+  }
+  .key:nth-child(-n + 5) {
+    width: 20rem;
+  }
+  .key {
+    max-height: 10rem;
+  }
+}
+@media screen and (max-width: 1216px) {
+  .key:nth-child(-n + 5) {
+    width: 15rem;
+  }
+  .key {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .key {
+    width: 20rem;
+  }
+  .key:nth-child(-n + 5) {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .key {
+    width: 15rem;
+  }
+  .key:nth-child(-n + 5) {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 6px;
+  }
+}
